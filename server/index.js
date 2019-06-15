@@ -20,6 +20,9 @@ app.use(body_parse.json());
         *Un JWT
         *Nombre Usuario
  */
+app.get('/', function(req, res) {
+    res.send('API PARA CONSUMIR POR ANGULAR')
+});
 app.post('/Login', function(req, res) {
     var data = req.body;
 
