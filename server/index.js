@@ -23,7 +23,11 @@ app.use(body_parse.json());
 app.get('/:id', function(req, res) {
     var id = req.params.id;
 
-    res.send(`El PARAMETRO DEL URL ES ${id}`)
+    /*     res.send(`El PARAMETRO DEL URL ES ${id}`)
+     */
+    res.json({
+        id
+    })
 });
 app.post('/Login', function(req, res) {
     var data = req.body;
